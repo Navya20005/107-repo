@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        color: darkblue;
+        margin-bottom: 30px;
+        background-color: lightblue;
+        height:50px;
+        }
+        nav{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            color:blue;
+            background-color: lightblue;
+
+        }
+        @media(max-width: 600px){
+            .container {
+                display: grid;
+                 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                
+            }
+
+        }
+         @media(max-width: 500px){
+            .container {
+                display: grid;
+                 grid-template-columns: 1fr 1fr 1fr;
+                
+            }
+
+        }
+         @media(max-width: 400px){
+            .container {
+                display: grid;
+                 grid-template-columns: 1fr 1fr;
+                
+            }
+
+        }
+        
+        .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    
+}
+.box{
+    background-color: white;
+    width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 8px gray;
+    opacity:1;
+    overflow:hidden;
+    cursor:pointer;
+    transform:translatex(0) translatey(0) rotate(0deg) scale(1);
+
+
+}
+.box img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+}
+
+.box h4 {
+    color: black;
+}
+
+.box p {
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button {
+    background-color: darkblue;
+    color: white;
+    transition-duration: 1s;
+    transition-property: background-color;
+    transition-timing-function: ease-in-out;
+    
+}
+
+button:hover {
+    background-color: blue;
+    
+
+}
+
+     form{
+            background-color:white;
+            width: 400px;
+            margin: auto;
+            padding: 25px;
+}
+input:focus{
+    outline: 2px solid blue;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Restaurent</h1>
+    <nav>
+        <a href="#home">home</a>
+        <a href="#starters">starters</a>
+        <a href="#biryanis">biryanis</a>
+        <a href="#pizzas">pizzas</a>
+        <a href="#cooldrinks">cooldrinks</a>
+        <a href="#register">register</a>
+    </nav>
+    <h2 id="starters">starters</h2>
+    <div class="container">
+        <div class="box">
+            <img src="https://images.immediate.co.uk/production/volatile/sites/30/2024/03/Jamon-and-wild-garlic-croquetas-50f2d2f.jpg">
+            <h4>name:veg starter</h4>
+            <p>price:20rs</p>
+            <button>order</button>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6HA63PXpWma4gqqhtyMehNcYMi_cbJooZxi-5W0R3TF6leymAwjvYVXjz&s=10">
+            <h4>name: egg starter</h4>
+            <p>price:150rs</p>
+            <button>order</button>
+        </div>
+        <div class="box">
+            <img src="https://static.toiimg.com/thumb/resizemode-4,width-1280,height-720,msid-128907793/128907793.jpg">
+            <h4>name:chicken starter</h4>
+            <p>price:200rs</p>
+            <button>order</button>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhlkVKHxzWseAvMvob4E_8OsJUTuo-yBdpIpxiYKFqeg&s">
+            <h4>name:fish starter</h4>
+            <p>price:250rs</p>
+            <button>order</button>
+        </div>
+        <div class="box">
+            <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2017/07/mutton-fry.jpg">
+            <h4>name:mutton starter</h4>
+            <p>price:250rs</p>
+            <button>order</button>
+        </div>
+    </div>
+    <h2 id="biryanis">Biryanis</h2>
+    <div class="container">
+        <div class="box">
+            <img src="https://www.cookingcarnival.com/wp-content/uploads/2025/09/Vegetable-Dum-Biryani-5.jpg">
+            <h4>name:veg biryani</h4>
+            <p>price:150rs</p>
+            <button>order</button>
+        </div>
+        <div class="box">
+            <img src="https://www.cubesnjuliennes.com/wp-content/uploads/2020/07/Chicken-Biryani-Recipe.jpg">
+            <h4>name:chicken biryani</h4>
+            <p>price:250rs</p>
+            <button>order</button>
+        </div>
+        <div class="box">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/059/003/393/small/a-clay-bowl-filled-with-rice-and-meat-photo.jpg">
+            <h4>name:mutton biryani</h4>
+            <p>price:300rs</p>
+            <button>order</button>
+        </div>
+        <div class="box">
+            <img src="https://media.istockphoto.com/id/1334383300/photo/fish-biryani-spicy-and-delicious-malabar-biryani-or-hydrabadi-biryani-dum-biriyani.jpg?s=612x612&w=0&k=20&c=NHYmMWB3wFbILekgO0d9gEfDcOXTi-c9q-E0yT3Y9lU=">
+            <h4>name:fish biryani</h4>
+            <p>price:350rs</p>
+            <button>order</button>
+        </div>
+        <div class="box">
+            <img src="https://t3.ftcdn.net/jpg/11/44/58/82/360_F_1144588279_qOkkBYCdhl3YjE40aSd66yjHILQgwRWX.jpg">
+            <h4>name:prawn biryani</h4>
+            <p>price:400rs</p>
+            <button>order</button>
+        </div>
+    </div>
+    <h2 id="pizzas">pizzas</h2>
+    <div class="container">
+        <div class="box">
+            <img src="https://www.liveeatlearn.com/wp-content/uploads/2025/09/Veggie-Pizza-12.jpg">
+            <h4>name:veg pizza</h4>
+            <p>price:150rs</p>
+            <button>order</button>
+        </div>
+        <div class="box">
+            <img src="https://www.recipetineats.com/tachyon/2023/05/Garlic-cheese-pizza_9.jpg">
+            <h4>name:veg pizza</h4>
+            <p>price:150rs</p>
+            <button>order</button>
+        </div>
+        <div class="box">
+            <img src="https://theartisticcook.com/wp-content/uploads/2025/03/Chicken-Pizza.jpg">
+            <h4>name:chicken pizza</h4>
+            <p>price:250rs</p>
+            <button>order</button>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmMdLk16mExrwVYSh4ujTguFw6gS8cyXXHXsUWpJQ7DPO3tZ4nkFr0tFY&s=10">
+            <h4>name:mutton pizza</h4>
+            <p>price:250rs</p>
+            <button>order</button>
+        </div>
+        <div class="box">
+            <img src="https://storage.googleapis.com/shy-pub/301880/ChatGPTImageJul29202603_22_29PM-1785318783382.png">
+            <h4>name:prawn pizza</h4>
+            <p>price:250rs</p>
+            <button>order</button>
+        </div>
+    </div>
+    <h2 id="cooldrinks">cooldrinks</h2>
+    <div class="container">
+        <div class="box">
+            <img src="https://kimart.in/wp-content/uploads/2026/03/ChatGPT-Image-Mar-28-2026-02_58_11-PM.png">
+            <h4>name:Thumsup</h4>
+            <p>price:50rs</p>
+            <button>order</button>
+        </div>
+        <div class="box">
+            <img src="https://m.media-amazon.com/images/I/61GrMnZ1AOL.jpg">
+            <h4>name:sprite</h4>
+            <p>price:20rs</p>
+            <button>order</button>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJAwmHRocMl0PZbWHp7mmbJHdWigLQBQRWyX62PcKAHodsNz9BVyKRRFg&s=10">
+            <h4>name:coca cola</h4>
+            <p>price:100rs</p>
+            <button>order</button>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTpQ8zzqKHVeqdpCwKrxLVZk1LHRvk4rqH54RdxGs5kD7Xi-ee0FlitMfS&s=10">
+            <h4>name:pepsi</h4>
+            <p>price:25rs</p>
+            <button>order</button>
+        </div>
+        <div class="box">
+            <img src="https://media.istockphoto.com/id/2051002797/photo/virgin-lemon-mint-mojito-soda-served-in-cocktail-glass-isolated-on-dark-background-side-view.jpg?s=612x612&w=0&k=20&c=0JdFHWjV-n3d0tWmAIKOcZfCqkLJYByNaXUrIUTTu1U=">
+            <h4>name:mutton starter</h4>
+            <p>price:30rs</p>
+            <button>order</button>
+        </div>
+    </div>
+    <div class="form">
+        <form id="register">
+            <label>username:</label>
+            <input type="text" id="username" name="username" placeholder="enter your name"><br><br>
+            <label>email:</label>
+            <input type="email" id="email" name="email" placeholder="enter your email"><br><br>
+            <label>password:</label>
+            <input type="password" id="password" name="password" placeholder="enter your password"><br><br>
+            <button>submit</button>
+        </form>
+    </div>
+</body>
+</html>
